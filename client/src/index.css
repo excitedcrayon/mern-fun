@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Helvetica', sans-serif;
+}
+#mernApp{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 5rem 0;
+}
+.categories{
+    padding: 2rem;
+}
+
+.category-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    border-bottom: 1px solid #EEE;
+}
+.category-row:nth-of-type(odd){
+    background: rgba(238,238,238,0.4);
+}
+.category-row span{
+    padding: 0.45rem;
+}
+.crud-form{
+    width: 100%;
+    margin: 0 auto;
+}
+.crud-form .form-row{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.crud-form .form-button{
+    margin: 1.25rem 0;
+}
+button,
+.btn{
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #EEE;
+    background: transparent;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border-radius: 0.25rem;
+}
+.btn-primary{
+    color: #FFF;
+    background: #222;
+}
+.btn-primary:hover{
+    color: #222;
+    background: rgb(132, 221, 132);
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #CECECE;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    border: 1px solid rgba(0,0,0,0.45);
+    background: rgba(238,238,238,0.4);
+}
+textarea{
+    resize: none;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
